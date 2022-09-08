@@ -1,0 +1,67 @@
+/**
+ * Danger color config
+ */
+$danger-color: false;
+$danger-color-contrast: false !default;
+
+$danger-color-dark: false !default;
+$danger-color-dark-contrast: false !default;
+
+$danger-color-darker: false !default;
+$danger-color-darker-contrast: false !default;
+
+$danger-color-light: false !default;
+$danger-color-light-contrast: false !default;
+
+$danger-color-lighter: false !default;
+$danger-color-lighter-contrast: false !default;
+
+@mixin set-danger-color($color: false, $contrast: false) {
+  @if($color) {
+    $danger-color: $color !global;
+  }
+
+  @if($color) {
+    $danger-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-danger-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $danger-color-light: $color !global;
+  }
+
+  @if($color) {
+    $danger-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-danger-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $danger-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $danger-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-danger-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $danger-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $danger-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-danger-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $danger-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $danger-color-darker-contrast: $contrast !global;
+  }
+}

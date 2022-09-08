@@ -1,0 +1,39 @@
+@import "src/colors/primary-color";
+@import "src/colors/secondary-color";
+@import "src/colors/info-color";
+@import "src/colors/warning-color";
+@import "src/colors/success-color";
+@import "src/colors/danger-color";
+@import "src/colors/alert-color";
+@import "src/colors/target-color";
+@import "src/colors/focus-color";
+
+@include set-primary-color(#42b883);
+@include set-primary-color-light(#42d392);
+@include set-primary-color-lighter(#35eb9a);
+@include set-primary-color-dark(#33a06f);
+@include set-primary-color-darker(#155f3e);
+
+@include set-secondary-color(#3b8eed);
+@include set-secondary-color-light(#549ced);
+@include set-secondary-color-lighter(#50a2ff);
+@include set-secondary-color-dark(#3468a3);
+@include set-secondary-color-darker(#255489);
+
+@include set-warning-color(#ffc517);
+@include set-warning-color-light(#ffe417);
+@include set-warning-color-lighter(#ffff17);
+@include set-warning-color-dark(#e0ad15);
+@include set-warning-color-darker(#bc9112);
+
+@include set-danger-color(#ed3c50);
+@include set-danger-color-light(#f43771);
+@include set-danger-color-lighter(#fd1d7c);
+@include set-danger-color-dark(#cd2d3f);
+@include set-danger-color-darker(#ab2131);
+
+@include set-target-color(#de41e0);
+@include set-target-color-light(#e936eb);
+@include set-target-color-lighter(#f616f8);
+@include set-target-color-dark(#823c83);
+@include set-target-color-darker(#602960);

@@ -1,0 +1,67 @@
+/**
+ * Target color config
+ */
+$target-color: false;
+$target-color-contrast: false !default;
+
+$target-color-dark: false !default;
+$target-color-dark-contrast: false !default;
+
+$target-color-darker: false !default;
+$target-color-darker-contrast: false !default;
+
+$target-color-light: false !default;
+$target-color-light-contrast: false !default;
+
+$target-color-lighter: false !default;
+$target-color-lighter-contrast: false !default;
+
+@mixin set-target-color($color: false, $contrast: false) {
+  @if($color) {
+    $target-color: $color !global;
+  }
+
+  @if($color) {
+    $target-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-target-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $target-color-light: $color !global;
+  }
+
+  @if($color) {
+    $target-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-target-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $target-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $target-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-target-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $target-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $target-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-target-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $target-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $target-color-darker-contrast: $contrast !global;
+  }
+}

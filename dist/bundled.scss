@@ -1,0 +1,605 @@
+/**
+ * Brand-Primary color config
+ */
+$primary-color: false;
+$primary-color-contrast: false !default;
+
+$primary-color-dark: false !default;
+$primary-color-dark-contrast: false !default;
+
+$primary-color-darker: false !default;
+$primary-color-darker-contrast: false !default;
+
+$primary-color-light: false !default;
+$primary-color-light-contrast: false !default;
+
+$primary-color-lighter: false !default;
+$primary-color-lighter-contrast: false !default;
+
+@mixin set-primary-color($color: false, $contrast: false) {
+  @if($color) {
+    $primary-color: $color !global;
+  }
+
+  @if($color) {
+    $primary-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-primary-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $primary-color-light: $color !global;
+  }
+
+  @if($color) {
+    $primary-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-primary-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $primary-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $primary-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-primary-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $primary-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $primary-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-primary-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $primary-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $primary-color-darker-contrast: $contrast !global;
+  }
+}
+/**
+ * Brand-Secondary color config
+ */
+$secondary-color: false;
+$secondary-color-contrast: false !default;
+
+$secondary-color-dark: false !default;
+$secondary-color-dark-contrast: false !default;
+
+$secondary-color-darker: false !default;
+$secondary-color-darker-contrast: false !default;
+
+$secondary-color-light: false !default;
+$secondary-color-light-contrast: false !default;
+
+$secondary-color-lighter: false !default;
+$secondary-color-lighter-contrast: false !default;
+
+@mixin set-secondary-color($color: false, $contrast: false) {
+  @if($color) {
+    $secondary-color: $color !global;
+  }
+
+  @if($color) {
+    $secondary-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-secondary-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $secondary-color-light: $color !global;
+  }
+
+  @if($color) {
+    $secondary-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-secondary-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $secondary-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $secondary-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-secondary-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $secondary-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $secondary-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-secondary-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $secondary-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $secondary-color-darker-contrast: $contrast !global;
+  }
+}
+/**
+ * Info color config
+ */
+$info-color: false;
+$info-color-contrast: false !default;
+
+$info-color-dark: false !default;
+$info-color-dark-contrast: false !default;
+
+$info-color-darker: false !default;
+$info-color-darker-contrast: false !default;
+
+$info-color-light: false !default;
+$info-color-light-contrast: false !default;
+
+$info-color-lighter: false !default;
+$info-color-lighter-contrast: false !default;
+
+@mixin set-info-color($color: false, $contrast: false) {
+  @if($color) {
+    $info-color: $color !global;
+  }
+
+  @if($color) {
+    $info-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-info-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $info-color-light: $color !global;
+  }
+
+  @if($color) {
+    $info-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-info-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $info-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $info-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-info-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $info-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $info-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-info-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $info-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $info-color-darker-contrast: $contrast !global;
+  }
+}
+/**
+ * Warning color config
+ */
+$warning-color: false;
+$warning-color-contrast: false !default;
+
+$warning-color-dark: false !default;
+$warning-color-dark-contrast: false !default;
+
+$warning-color-darker: false !default;
+$warning-color-darker-contrast: false !default;
+
+$warning-color-light: false !default;
+$warning-color-light-contrast: false !default;
+
+$warning-color-lighter: false !default;
+$warning-color-lighter-contrast: false !default;
+
+@mixin set-warning-color($color: false, $contrast: false) {
+  @if($color) {
+    $warning-color: $color !global;
+  }
+
+  @if($color) {
+    $warning-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-warning-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $warning-color-light: $color !global;
+  }
+
+  @if($color) {
+    $warning-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-warning-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $warning-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $warning-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-warning-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $warning-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $warning-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-warning-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $warning-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $warning-color-darker-contrast: $contrast !global;
+  }
+}
+/**
+ * Success color config
+ */
+$success-color: false;
+$success-color-contrast: false !default;
+
+$success-color-dark: false !default;
+$success-color-dark-contrast: false !default;
+
+$success-color-darker: false !default;
+$success-color-darker-contrast: false !default;
+
+$success-color-light: false !default;
+$success-color-light-contrast: false !default;
+
+$success-color-lighter: false !default;
+$success-color-lighter-contrast: false !default;
+
+@mixin set-success-color($color: false, $contrast: false) {
+  @if($color) {
+    $success-color: $color !global;
+  }
+
+  @if($color) {
+    $success-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-success-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $success-color-light: $color !global;
+  }
+
+  @if($color) {
+    $success-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-success-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $success-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $success-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-success-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $success-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $success-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-success-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $success-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $success-color-darker-contrast: $contrast !global;
+  }
+}
+/**
+ * Danger color config
+ */
+$danger-color: false;
+$danger-color-contrast: false !default;
+
+$danger-color-dark: false !default;
+$danger-color-dark-contrast: false !default;
+
+$danger-color-darker: false !default;
+$danger-color-darker-contrast: false !default;
+
+$danger-color-light: false !default;
+$danger-color-light-contrast: false !default;
+
+$danger-color-lighter: false !default;
+$danger-color-lighter-contrast: false !default;
+
+@mixin set-danger-color($color: false, $contrast: false) {
+  @if($color) {
+    $danger-color: $color !global;
+  }
+
+  @if($color) {
+    $danger-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-danger-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $danger-color-light: $color !global;
+  }
+
+  @if($color) {
+    $danger-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-danger-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $danger-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $danger-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-danger-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $danger-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $danger-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-danger-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $danger-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $danger-color-darker-contrast: $contrast !global;
+  }
+}
+/**
+ * Alert color config
+ */
+$alert-color: false;
+$alert-color-contrast: false !default;
+
+$alert-color-dark: false !default;
+$alert-color-dark-contrast: false !default;
+
+$alert-color-darker: false !default;
+$alert-color-darker-contrast: false !default;
+
+$alert-color-light: false !default;
+$alert-color-light-contrast: false !default;
+
+$alert-color-lighter: false !default;
+$alert-color-lighter-contrast: false !default;
+
+@mixin set-alert-color($color: false, $contrast: false) {
+  @if($color) {
+    $alert-color: $color !global;
+  }
+
+  @if($color) {
+    $alert-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-alert-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $alert-color-light: $color !global;
+  }
+
+  @if($color) {
+    $alert-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-alert-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $alert-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $alert-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-alert-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $alert-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $alert-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-alert-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $alert-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $alert-color-darker-contrast: $contrast !global;
+  }
+}
+
+
+/**
+ * Target color config
+ */
+$target-color: false;
+$target-color-contrast: false !default;
+
+$target-color-dark: false !default;
+$target-color-dark-contrast: false !default;
+
+$target-color-darker: false !default;
+$target-color-darker-contrast: false !default;
+
+$target-color-light: false !default;
+$target-color-light-contrast: false !default;
+
+$target-color-lighter: false !default;
+$target-color-lighter-contrast: false !default;
+
+@mixin set-target-color($color: false, $contrast: false) {
+  @if($color) {
+    $target-color: $color !global;
+  }
+
+  @if($color) {
+    $target-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-target-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $target-color-light: $color !global;
+  }
+
+  @if($color) {
+    $target-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-target-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $target-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $target-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-target-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $target-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $target-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-target-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $target-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $target-color-darker-contrast: $contrast !global;
+  }
+}
+/**
+ * Focus color config
+ */
+$focus-color: false;
+$focus-color-contrast: false !default;
+
+$focus-color-dark: false !default;
+$focus-color-dark-contrast: false !default;
+
+$focus-color-darker: false !default;
+$focus-color-darker-contrast: false !default;
+
+$focus-color-light: false !default;
+$focus-color-light-contrast: false !default;
+
+$focus-color-lighter: false !default;
+$focus-color-lighter-contrast: false !default;
+
+@mixin set-focus-color($color: false, $contrast: false) {
+  @if($color) {
+    $focus-color: $color !global;
+  }
+
+  @if($color) {
+    $focus-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-focus-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $focus-color-light: $color !global;
+  }
+
+  @if($color) {
+    $focus-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-focus-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $focus-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $focus-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-focus-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $focus-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $focus-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-focus-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $focus-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $focus-color-darker-contrast: $contrast !global;
+  }
+}

@@ -1,0 +1,67 @@
+/**
+ * Success color config
+ */
+$success-color: false;
+$success-color-contrast: false !default;
+
+$success-color-dark: false !default;
+$success-color-dark-contrast: false !default;
+
+$success-color-darker: false !default;
+$success-color-darker-contrast: false !default;
+
+$success-color-light: false !default;
+$success-color-light-contrast: false !default;
+
+$success-color-lighter: false !default;
+$success-color-lighter-contrast: false !default;
+
+@mixin set-success-color($color: false, $contrast: false) {
+  @if($color) {
+    $success-color: $color !global;
+  }
+
+  @if($color) {
+    $success-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-success-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $success-color-light: $color !global;
+  }
+
+  @if($color) {
+    $success-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-success-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $success-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $success-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-success-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $success-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $success-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-success-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $success-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $success-color-darker-contrast: $contrast !global;
+  }
+}

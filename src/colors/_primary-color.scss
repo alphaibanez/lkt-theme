@@ -1,0 +1,67 @@
+/**
+ * Brand-Primary color config
+ */
+$primary-color: false;
+$primary-color-contrast: false !default;
+
+$primary-color-dark: false !default;
+$primary-color-dark-contrast: false !default;
+
+$primary-color-darker: false !default;
+$primary-color-darker-contrast: false !default;
+
+$primary-color-light: false !default;
+$primary-color-light-contrast: false !default;
+
+$primary-color-lighter: false !default;
+$primary-color-lighter-contrast: false !default;
+
+@mixin set-primary-color($color: false, $contrast: false) {
+  @if($color) {
+    $primary-color: $color !global;
+  }
+
+  @if($color) {
+    $primary-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-primary-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $primary-color-light: $color !global;
+  }
+
+  @if($color) {
+    $primary-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-primary-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $primary-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $primary-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-primary-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $primary-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $primary-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-primary-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $primary-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $primary-color-darker-contrast: $contrast !global;
+  }
+}

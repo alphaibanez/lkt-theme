@@ -1,0 +1,67 @@
+/**
+ * Focus color config
+ */
+$focus-color: false;
+$focus-color-contrast: false !default;
+
+$focus-color-dark: false !default;
+$focus-color-dark-contrast: false !default;
+
+$focus-color-darker: false !default;
+$focus-color-darker-contrast: false !default;
+
+$focus-color-light: false !default;
+$focus-color-light-contrast: false !default;
+
+$focus-color-lighter: false !default;
+$focus-color-lighter-contrast: false !default;
+
+@mixin set-focus-color($color: false, $contrast: false) {
+  @if($color) {
+    $focus-color: $color !global;
+  }
+
+  @if($color) {
+    $focus-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-focus-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $focus-color-light: $color !global;
+  }
+
+  @if($color) {
+    $focus-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-focus-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $focus-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $focus-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-focus-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $focus-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $focus-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-focus-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $focus-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $focus-color-darker-contrast: $contrast !global;
+  }
+}

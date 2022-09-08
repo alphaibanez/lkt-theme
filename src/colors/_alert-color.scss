@@ -1,0 +1,68 @@
+/**
+ * Alert color config
+ */
+$alert-color: false;
+$alert-color-contrast: false !default;
+
+$alert-color-dark: false !default;
+$alert-color-dark-contrast: false !default;
+
+$alert-color-darker: false !default;
+$alert-color-darker-contrast: false !default;
+
+$alert-color-light: false !default;
+$alert-color-light-contrast: false !default;
+
+$alert-color-lighter: false !default;
+$alert-color-lighter-contrast: false !default;
+
+@mixin set-alert-color($color: false, $contrast: false) {
+  @if($color) {
+    $alert-color: $color !global;
+  }
+
+  @if($color) {
+    $alert-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-alert-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $alert-color-light: $color !global;
+  }
+
+  @if($color) {
+    $alert-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-alert-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $alert-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $alert-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-alert-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $alert-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $alert-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-alert-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $alert-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $alert-color-darker-contrast: $contrast !global;
+  }
+}
+
