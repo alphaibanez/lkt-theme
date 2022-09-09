@@ -1,8 +1,11 @@
 # LKT SCSS Theming
 
 
-## Available Colors
+## Colors
 
+---
+
+### Available colors
 | Color     | Use case                                               |
 |-----------|--------------------------------------------------------|
 | primary   | This is your brand main color                          |
@@ -16,7 +19,7 @@
 | focus     | Focus inputs                                           |
 
 
-## Available Colors Modifiers
+### Available Colors Modifiers
 
 | Modifiers | Use case                                                                       |
 |-----------|--------------------------------------------------------------------------------|
@@ -26,21 +29,50 @@
 | dark      | A dark version of the color                                                    |
 | darker    | A darker version of the color                                                  |
 
-## Configuration
+### Colors configuration
 
 ```scss
-@use "lkt-scss-theming";
+@use "lkt-theme";
 
-@include lkt-scss-theming.set-primary-color(#ff0000, #ffffff);
-@include lkt-scss-theming.set-secondary-color(blue, green);
+@include lkt-theme.set-primary-color(#ff0000, #ffffff);
+@include lkt-theme.set-secondary-color(blue, green);
 ```
 
-## Usage
+### Colors usage
 ```scss
-@use "lkt-scss-theming";
+@use "lkt-theme";
 
 
 button.success {
-  background: lkt-scss-theming.$success-color;
+  background: lkt-theme.$success-color;
+}
+```
+
+## Border radius
+
+---
+
+### Available border radius
+| Color     | Use case                               |
+|-----------|----------------------------------------|
+| primary   | The main border radius in your project |
+| secondary | Additional border radius               |
+| tertiary  | Another one just in case               |
+
+### Border radius configuration
+
+```scss
+@use "lkt-theme";
+
+@include lkt-scss-theming.set-border-radius(1px, 2px, 4px);
+```
+
+### Border radius usage
+```scss
+@use "lkt-theme";
+
+
+button.success {
+  border-radius: lkt-theme.$primary-border-radius;
 }
 ```
