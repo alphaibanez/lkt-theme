@@ -1,7 +1,7 @@
 /**
  * Danger color config
  */
-$danger-color: false;
+$danger-color: false !default;
 $danger-color-contrast: false !default;
 
 $danger-color-dark: false !default;

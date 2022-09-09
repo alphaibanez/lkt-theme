@@ -1,0 +1,15 @@
+$primary-border-radius: 0 !default;
+$secondary-border-radius: 0 !default;
+$tertiary-border-radius: 0 !default;
+
+@mixin set-border-radius($primary: 0, $secondary: 0, $tertiary: 0) {
+  @if($primary) {
+    $primary-border-radius: $primary !global;
+  }
+  @if($secondary) {
+    $secondary-border-radius: $secondary !global;
+  }
+  @if($tertiary) {
+    $tertiary-border-radius: $tertiary !global;
+  }
+}

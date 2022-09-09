@@ -1,7 +1,7 @@
 /**
  * Brand-Primary color config
  */
-$primary-color: false;
+$primary-color: false !default;
 $primary-color-contrast: false !default;
 
 $primary-color-dark: false !default;
@@ -68,7 +68,7 @@ $primary-color-lighter-contrast: false !default;
 /**
  * Brand-Secondary color config
  */
-$secondary-color: false;
+$secondary-color: false !default;
 $secondary-color-contrast: false !default;
 
 $secondary-color-dark: false !default;
@@ -135,7 +135,7 @@ $secondary-color-lighter-contrast: false !default;
 /**
  * Info color config
  */
-$info-color: false;
+$info-color: false !default;
 $info-color-contrast: false !default;
 
 $info-color-dark: false !default;
@@ -202,7 +202,7 @@ $info-color-lighter-contrast: false !default;
 /**
  * Warning color config
  */
-$warning-color: false;
+$warning-color: false !default;
 $warning-color-contrast: false !default;
 
 $warning-color-dark: false !default;
@@ -269,7 +269,7 @@ $warning-color-lighter-contrast: false !default;
 /**
  * Success color config
  */
-$success-color: false;
+$success-color: false !default;
 $success-color-contrast: false !default;
 
 $success-color-dark: false !default;
@@ -336,7 +336,7 @@ $success-color-lighter-contrast: false !default;
 /**
  * Danger color config
  */
-$danger-color: false;
+$danger-color: false !default;
 $danger-color-contrast: false !default;
 
 $danger-color-dark: false !default;
@@ -403,7 +403,7 @@ $danger-color-lighter-contrast: false !default;
 /**
  * Alert color config
  */
-$alert-color: false;
+$alert-color: false !default;
 $alert-color-contrast: false !default;
 
 $alert-color-dark: false !default;
@@ -472,7 +472,7 @@ $alert-color-lighter-contrast: false !default;
 /**
  * Target color config
  */
-$target-color: false;
+$target-color: false !default;
 $target-color-contrast: false !default;
 
 $target-color-dark: false !default;
@@ -539,7 +539,7 @@ $target-color-lighter-contrast: false !default;
 /**
  * Focus color config
  */
-$focus-color: false;
+$focus-color: false !default;
 $focus-color-contrast: false !default;
 
 $focus-color-dark: false !default;
@@ -601,5 +601,21 @@ $focus-color-lighter-contrast: false !default;
 
   @if($color) {
     $focus-color-darker-contrast: $contrast !global;
+  }
+}
+
+$primary-border-radius: 0 !default;
+$secondary-border-radius: 0 !default;
+$tertiary-border-radius: 0 !default;
+
+@mixin set-border-radius($primary: 0, $secondary: 0, $tertiary: 0) {
+  @if($primary) {
+    $primary-border-radius: $primary !global;
+  }
+  @if($secondary) {
+    $secondary-border-radius: $secondary !global;
+  }
+  @if($tertiary) {
+    $tertiary-border-radius: $tertiary !global;
   }
 }

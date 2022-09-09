@@ -1,7 +1,7 @@
 /**
  * Alert color config
  */
-$alert-color: false;
+$alert-color: false !default;
 $alert-color-contrast: false !default;
 
 $alert-color-dark: false !default;

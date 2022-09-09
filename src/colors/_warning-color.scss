@@ -1,7 +1,7 @@
 /**
  * Warning color config
  */
-$warning-color: false;
+$warning-color: false !default;
 $warning-color-contrast: false !default;
 
 $warning-color-dark: false !default;

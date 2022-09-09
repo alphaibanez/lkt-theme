@@ -1,6 +1,6 @@
 {
   "name": "lkt-scss-theming",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple tool for theming config and control",
   "main": "dist/bundled.scss",
   "module": "dist/bundled.scss",

@@ -1,7 +1,7 @@
 /**
  * Target color config
  */
-$target-color: false;
+$target-color: false !default;
 $target-color-contrast: false !default;
 
 $target-color-dark: false !default;
