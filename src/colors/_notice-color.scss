@@ -1,0 +1,67 @@
+/**
+ * Notice color config
+ */
+$notice-color: false !default;
+$notice-color-contrast: false !default;
+
+$notice-color-dark: false !default;
+$notice-color-dark-contrast: false !default;
+
+$notice-color-darker: false !default;
+$notice-color-darker-contrast: false !default;
+
+$notice-color-light: false !default;
+$notice-color-light-contrast: false !default;
+
+$notice-color-lighter: false !default;
+$notice-color-lighter-contrast: false !default;
+
+@mixin set-notice-color($color: false, $contrast: false) {
+  @if($color) {
+    $notice-color: $color !global;
+  }
+
+  @if($color) {
+    $notice-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-notice-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $notice-color-light: $color !global;
+  }
+
+  @if($color) {
+    $notice-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-notice-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $notice-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $notice-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-notice-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $notice-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $notice-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-notice-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $notice-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $notice-color-darker-contrast: $contrast !global;
+  }
+}

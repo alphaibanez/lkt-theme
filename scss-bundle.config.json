@@ -2,7 +2,7 @@
   "bundlerOptions": {
     "entryFile": "src/main.scss",
     "rootDir": "./",
-    "outFile": "./dist/bundled.scss",
+    "outFile": "./lkt-theme.scss",
     "ignoreImports": ["~@angular/.*"],
     "logLevel": "silent"
   }

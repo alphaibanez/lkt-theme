@@ -467,8 +467,6 @@ $alert-color-lighter-contrast: false !default;
     $alert-color-darker-contrast: $contrast !global;
   }
 }
-
-
 /**
  * Target color config
  */
@@ -603,6 +601,274 @@ $focus-color-lighter-contrast: false !default;
     $focus-color-darker-contrast: $contrast !global;
   }
 }
+/**
+ * Disabled\ color config
+ */
+$disabled-color: false !default;
+$disabled-color-contrast: false !default;
+
+$disabled-color-dark: false !default;
+$disabled-color-dark-contrast: false !default;
+
+$disabled-color-darker: false !default;
+$disabled-color-darker-contrast: false !default;
+
+$disabled-color-light: false !default;
+$disabled-color-light-contrast: false !default;
+
+$disabled-color-lighter: false !default;
+$disabled-color-lighter-contrast: false !default;
+
+@mixin set-disabled-color($color: false, $contrast: false) {
+  @if($color) {
+    $disabled-color: $color !global;
+  }
+
+  @if($color) {
+    $disabled-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-disabled-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $disabled-color-light: $color !global;
+  }
+
+  @if($color) {
+    $disabled-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-disabled-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $disabled-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $disabled-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-disabled-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $disabled-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $disabled-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-disabled-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $disabled-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $disabled-color-darker-contrast: $contrast !global;
+  }
+}
+/**
+ * Notice color config
+ */
+$notice-color: false !default;
+$notice-color-contrast: false !default;
+
+$notice-color-dark: false !default;
+$notice-color-dark-contrast: false !default;
+
+$notice-color-darker: false !default;
+$notice-color-darker-contrast: false !default;
+
+$notice-color-light: false !default;
+$notice-color-light-contrast: false !default;
+
+$notice-color-lighter: false !default;
+$notice-color-lighter-contrast: false !default;
+
+@mixin set-notice-color($color: false, $contrast: false) {
+  @if($color) {
+    $notice-color: $color !global;
+  }
+
+  @if($color) {
+    $notice-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-notice-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $notice-color-light: $color !global;
+  }
+
+  @if($color) {
+    $notice-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-notice-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $notice-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $notice-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-notice-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $notice-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $notice-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-notice-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $notice-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $notice-color-darker-contrast: $contrast !global;
+  }
+}
+/**
+ * Text color config
+ */
+$text-color: false !default;
+$text-color-contrast: false !default;
+
+$text-color-dark: false !default;
+$text-color-dark-contrast: false !default;
+
+$text-color-darker: false !default;
+$text-color-darker-contrast: false !default;
+
+$text-color-light: false !default;
+$text-color-light-contrast: false !default;
+
+$text-color-lighter: false !default;
+$text-color-lighter-contrast: false !default;
+
+@mixin set-text-color($color: false, $contrast: false) {
+  @if($color) {
+    $text-color: $color !global;
+  }
+
+  @if($color) {
+    $text-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-text-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $text-color-light: $color !global;
+  }
+
+  @if($color) {
+    $text-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-text-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $text-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $text-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-text-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $text-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $text-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-text-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $text-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $text-color-darker-contrast: $contrast !global;
+  }
+}
+/**
+ * Gray color config
+ */
+$gray-color: false !default;
+$gray-color-contrast: false !default;
+
+$gray-color-dark: false !default;
+$gray-color-dark-contrast: false !default;
+
+$gray-color-darker: false !default;
+$gray-color-darker-contrast: false !default;
+
+$gray-color-light: false !default;
+$gray-color-light-contrast: false !default;
+
+$gray-color-lighter: false !default;
+$gray-color-lighter-contrast: false !default;
+
+@mixin set-gray-color($color: false, $contrast: false) {
+  @if($color) {
+    $gray-color: $color !global;
+  }
+
+  @if($color) {
+    $gray-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-gray-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $gray-color-light: $color !global;
+  }
+
+  @if($color) {
+    $gray-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-gray-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $gray-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $gray-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-gray-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $gray-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $gray-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-gray-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $gray-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $gray-color-darker-contrast: $contrast !global;
+  }
+}
 
 $primary-border-radius: 0 !default;
 $secondary-border-radius: 0 !default;
@@ -617,5 +883,116 @@ $tertiary-border-radius: 0 !default;
   }
   @if($tertiary) {
     $tertiary-border-radius: $tertiary !global;
+  }
+}
+
+$primary-transition: false !default;
+$secondary-transition: false !default;
+$tertiary-transition: false !default;
+
+@mixin set-transition($primary: false, $secondary: false, $tertiary: false) {
+  @if($primary) {
+    $primary-transition: $primary !global;
+  }
+  @if($secondary) {
+    $secondary-transition: $secondary !global;
+  }
+  @if($tertiary) {
+    $tertiary-transition: $tertiary !global;
+  }
+}
+
+$primary-header-font-family: false !default;
+$secondary-header-font-family: false !default;
+$tertiary-header-font-family: false !default;
+
+@mixin set-header-font-family($primary: false, $secondary: false, $tertiary: false) {
+  @if($primary) {
+    $primary-header-font-family: $primary !global;
+  }
+  @if($secondary) {
+    $secondary-header-font-family: $secondary !global;
+  }
+  @if($tertiary) {
+    $tertiary-header-font-family: $tertiary !global;
+  }
+}
+
+$primary-text-font-family: false !default;
+$secondary-text-font-family: false !default;
+$tertiary-text-font-family: false !default;
+
+@mixin set-text-font-family($primary: false, $secondary: false, $tertiary: false) {
+  @if($primary) {
+    $primary-text-font-family: $primary !global;
+  }
+  @if($secondary) {
+    $secondary-text-font-family: $secondary !global;
+  }
+  @if($tertiary) {
+    $tertiary-text-font-family: $tertiary !global;
+  }
+}
+
+$primary-button-font-family: false !default;
+$secondary-button-font-family: false !default;
+$tertiary-button-font-family: false !default;
+
+@mixin set-button-font-family($primary: false, $secondary: false, $tertiary: false) {
+  @if($primary) {
+    $primary-button-font-family: $primary !global;
+  }
+  @if($secondary) {
+    $secondary-button-font-family: $secondary !global;
+  }
+  @if($tertiary) {
+    $tertiary-button-font-family: $tertiary !global;
+  }
+}
+$primary-header-font-size: false !default;
+$secondary-header-font-size: false !default;
+$tertiary-header-font-size: false !default;
+
+@mixin set-header-font-size($primary: false, $secondary: false, $tertiary: false) {
+  @if($primary) {
+    $primary-header-font-size: $primary !global;
+  }
+  @if($secondary) {
+    $secondary-header-font-size: $secondary !global;
+  }
+  @if($tertiary) {
+    $tertiary-header-font-size: $tertiary !global;
+  }
+}
+
+$primary-text-font-size: false !default;
+$secondary-text-font-size: false !default;
+$tertiary-text-font-size: false !default;
+
+@mixin set-text-font-size($primary: false, $secondary: false, $tertiary: false) {
+  @if($primary) {
+    $primary-text-font-size: $primary !global;
+  }
+  @if($secondary) {
+    $secondary-text-font-size: $secondary !global;
+  }
+  @if($tertiary) {
+    $tertiary-text-font-size: $tertiary !global;
+  }
+}
+
+$primary-button-font-size: false !default;
+$secondary-button-font-size: false !default;
+$tertiary-button-font-size: false !default;
+
+@mixin set-button-font-size($primary: false, $secondary: false, $tertiary: false) {
+  @if($primary) {
+    $primary-button-font-size: $primary !global;
+  }
+  @if($secondary) {
+    $secondary-button-font-size: $secondary !global;
+  }
+  @if($tertiary) {
+    $tertiary-button-font-size: $tertiary !global;
   }
 }

@@ -1,0 +1,15 @@
+$primary-transition: false !default;
+$secondary-transition: false !default;
+$tertiary-transition: false !default;
+
+@mixin set-transition($primary: false, $secondary: false, $tertiary: false) {
+  @if($primary) {
+    $primary-transition: $primary !global;
+  }
+  @if($secondary) {
+    $secondary-transition: $secondary !global;
+  }
+  @if($tertiary) {
+    $tertiary-transition: $tertiary !global;
+  }
+}

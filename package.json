@@ -1,26 +1,29 @@
 {
-  "name": "lkt-scss-theming",
-  "version": "1.0.1",
+  "name": "lkt-theme",
+  "version": "1.0.2",
   "description": "A simple tool for theming config and control",
-  "main": "dist/bundled.scss",
-  "module": "dist/bundled.scss",
+  "main": "lkt-theme.scss",
+  "module": "lkt-theme.scss",
   "private": true,
   "files": [
-    "dist/bundled.scss"
+    "lkt-theme.scss"
   ],
+  "exports": {
+    "./lkt-theme.scss": "./lkt-theme.scss"
+  },
   "sideEffects": false,
   "scripts": {
     "bundle": "scss-bundle -c scss-bundle.config.json"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/lkt-ui/lkt-scss-theming.git"
+    "url": "git+https://gitlab.com/lkt-ui/lkt-theme.git"
   },
   "author": "Antonio Ibáñez",
   "license": "MIT",
-  "homepage": "https://gitlab.com/lkt-ui/lkt-scss-theming#readme",
+  "homepage": "https://gitlab.com/lkt-ui/lkt-theme#readme",
   "bugs": {
-    "url": "https://gitlab.com/lkt-ui/lkt-scss-theming/issues"
+    "url": "https://gitlab.com/lkt-ui/lkt-theme/issues"
   },
   "devDependencies": {
     "scss-bundle": "^3.1.2"

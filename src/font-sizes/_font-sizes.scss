@@ -1,0 +1,47 @@
+$primary-header-font-size: false !default;
+$secondary-header-font-size: false !default;
+$tertiary-header-font-size: false !default;
+
+@mixin set-header-font-size($primary: false, $secondary: false, $tertiary: false) {
+  @if($primary) {
+    $primary-header-font-size: $primary !global;
+  }
+  @if($secondary) {
+    $secondary-header-font-size: $secondary !global;
+  }
+  @if($tertiary) {
+    $tertiary-header-font-size: $tertiary !global;
+  }
+}
+
+$primary-text-font-size: false !default;
+$secondary-text-font-size: false !default;
+$tertiary-text-font-size: false !default;
+
+@mixin set-text-font-size($primary: false, $secondary: false, $tertiary: false) {
+  @if($primary) {
+    $primary-text-font-size: $primary !global;
+  }
+  @if($secondary) {
+    $secondary-text-font-size: $secondary !global;
+  }
+  @if($tertiary) {
+    $tertiary-text-font-size: $tertiary !global;
+  }
+}
+
+$primary-button-font-size: false !default;
+$secondary-button-font-size: false !default;
+$tertiary-button-font-size: false !default;
+
+@mixin set-button-font-size($primary: false, $secondary: false, $tertiary: false) {
+  @if($primary) {
+    $primary-button-font-size: $primary !global;
+  }
+  @if($secondary) {
+    $secondary-button-font-size: $secondary !global;
+  }
+  @if($tertiary) {
+    $tertiary-button-font-size: $tertiary !global;
+  }
+}

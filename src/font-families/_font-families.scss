@@ -1,0 +1,47 @@
+$primary-header-font-family: false !default;
+$secondary-header-font-family: false !default;
+$tertiary-header-font-family: false !default;
+
+@mixin set-header-font-family($primary: false, $secondary: false, $tertiary: false) {
+  @if($primary) {
+    $primary-header-font-family: $primary !global;
+  }
+  @if($secondary) {
+    $secondary-header-font-family: $secondary !global;
+  }
+  @if($tertiary) {
+    $tertiary-header-font-family: $tertiary !global;
+  }
+}
+
+$primary-text-font-family: false !default;
+$secondary-text-font-family: false !default;
+$tertiary-text-font-family: false !default;
+
+@mixin set-text-font-family($primary: false, $secondary: false, $tertiary: false) {
+  @if($primary) {
+    $primary-text-font-family: $primary !global;
+  }
+  @if($secondary) {
+    $secondary-text-font-family: $secondary !global;
+  }
+  @if($tertiary) {
+    $tertiary-text-font-family: $tertiary !global;
+  }
+}
+
+$primary-button-font-family: false !default;
+$secondary-button-font-family: false !default;
+$tertiary-button-font-family: false !default;
+
+@mixin set-button-font-family($primary: false, $secondary: false, $tertiary: false) {
+  @if($primary) {
+    $primary-button-font-family: $primary !global;
+  }
+  @if($secondary) {
+    $secondary-button-font-family: $secondary !global;
+  }
+  @if($tertiary) {
+    $tertiary-button-font-family: $tertiary !global;
+  }
+}

@@ -1,0 +1,67 @@
+/**
+ * Gray color config
+ */
+$gray-color: false !default;
+$gray-color-contrast: false !default;
+
+$gray-color-dark: false !default;
+$gray-color-dark-contrast: false !default;
+
+$gray-color-darker: false !default;
+$gray-color-darker-contrast: false !default;
+
+$gray-color-light: false !default;
+$gray-color-light-contrast: false !default;
+
+$gray-color-lighter: false !default;
+$gray-color-lighter-contrast: false !default;
+
+@mixin set-gray-color($color: false, $contrast: false) {
+  @if($color) {
+    $gray-color: $color !global;
+  }
+
+  @if($color) {
+    $gray-color-contrast: $contrast !global;
+  }
+}
+
+@mixin set-gray-color-light($color: false, $contrast: false) {
+  @if($color) {
+    $gray-color-light: $color !global;
+  }
+
+  @if($color) {
+    $gray-color-light-contrast: $contrast !global;
+  }
+}
+
+@mixin set-gray-color-lighter($color: false, $contrast: false) {
+  @if($color) {
+    $gray-color-lighter: $color !global;
+  }
+
+  @if($color) {
+    $gray-color-lighter-contrast: $contrast !global;
+  }
+}
+
+@mixin set-gray-color-dark($color: false, $contrast: false) {
+  @if($color) {
+    $gray-color-dark: $color !global;
+  }
+
+  @if($color) {
+    $gray-color-dark-contrast: $contrast !global;
+  }
+}
+
+@mixin set-gray-color-darker($color: false, $contrast: false) {
+  @if($color) {
+    $gray-color-darker: $color !global;
+  }
+
+  @if($color) {
+    $gray-color-darker-contrast: $contrast !global;
+  }
+}
