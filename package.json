@@ -1,6 +1,6 @@
 {
   "name": "lkt-theme",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple tool for theming config and control",
   "main": "lkt-theme.scss",
   "module": "lkt-theme.scss",

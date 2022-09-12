@@ -38,6 +38,23 @@ of the team.
 | dark      | A dark version of the color                                                    |
 | darker    | A darker version of the color                                                  |
 
+### Methods
+
+Each color has a configuration mixin with this structure:
+
+```scss
+lkt-theme.set-<colorName>-color(color, contrast)
+
+// For example:
+
+lkt-theme.set-secondary-color(...)
+lkt-theme.set-alert-color(...)
+lkt-theme.set-warning-color(...)
+...
+```
+
+
+
 ### Colors configuration
 
 ```scss
@@ -80,6 +97,14 @@ button.success-light {
 | secondary | Additional border radius               |
 | tertiary  | Another one just in case               |
 
+### Methods
+
+There is a mixin to configure all three border radius
+
+```scss
+lkt-theme.set-border-radius(primary, secondary, tertiary)
+```
+
 ### Border radius configuration
 
 ```scss
@@ -111,6 +136,14 @@ button.success {
 | secondary | Additional transition               |
 | tertiary  | Another one just in case            |
 
+### Methods
+
+There is a mixin to configure all three transitions
+
+```scss
+lkt-theme.set-transition(primary, secondary, tertiary)
+```
+
 ### Transition configuration
 
 ```scss
@@ -141,6 +174,14 @@ button.success {
 | primary   | The main font-size in your project |
 | secondary | Additional font-size               |
 | tertiary  | Another one just in case           |
+
+### Methods
+
+There is a mixin to configure all three font-sizes
+
+```scss
+lkt-theme.set-font-size(primary, secondary, tertiary)
+```
 
 ### Font-size configuration
 
@@ -178,6 +219,16 @@ button.success {
 | primary-button   | The main font-family in your project (for buttons) |
 | secondary-button | Additional font-family (for buttons)               |
 | tertiary-button  | Another one just in case (for buttons)             |
+
+### Methods
+
+There are three mixins to configure all font families
+
+```scss
+lkt-theme.set-header-font-family(primary, secondary, tertiary)
+lkt-theme.set-text-font-family(primary, secondary, tertiary)
+lkt-theme.set-button-font-family(primary, secondary, tertiary)
+```
 
 ### Font-family configuration
 
