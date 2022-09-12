@@ -1,10 +1,9 @@
 {
   "name": "lkt-theme",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple tool for theming config and control",
   "main": "lkt-theme.scss",
   "module": "lkt-theme.scss",
-  "private": true,
   "files": [
     "lkt-theme.scss"
   ],
@@ -19,7 +18,7 @@
     "type": "git",
     "url": "git+https://gitlab.com/lkt-ui/lkt-theme.git"
   },
-  "author": "Antonio Ibáñez",
+  "author": "Antonio Ibáñez <lkt.web.tech@gmail.com>",
   "license": "MIT",
   "homepage": "https://gitlab.com/lkt-ui/lkt-theme#readme",
   "bugs": {
