@@ -1,9 +1,14 @@
 {
   "name": "lkt-theme",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple tool for theming config and control",
   "main": "lkt-theme.scss",
   "module": "lkt-theme.scss",
+  "keywords": [
+    "lkt",
+    "lkt-web-tech",
+    "scss"
+  ],
   "files": [
     "lkt-theme.scss"
   ],
