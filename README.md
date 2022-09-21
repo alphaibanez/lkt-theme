@@ -3,12 +3,9 @@
 The semantic themes tool!
 
 This package can help handling most common and reusable theme props and in a sharable and collaborative way with the
-rest
-of the team.
+rest of the team.
 
 ## Colors
-
----
 
 ### Available colors
 
@@ -85,9 +82,65 @@ button.success-light {
 }
 ```
 
-## Border radius
+### Advanced colors usage
 
----
+There is a function named `get-color-map` which will return a map of maps with all the colors. The map structure it's like following:
+
+```
+(
+    name1: (color: name1-color, contrast: name1-color),
+    name2: (color: name2-color, contrast: name2-color),
+    ...
+    nameN: (color: nameN-color, contrast: nameN-color),
+)
+```
+
+For example:
+
+```scss
+@include lkt-theme.set-primary-color(#ff0000, #ffffff);
+@include lkt-theme.set-primary-color-dark(#ff0022, #ffffff);
+@include lkt-theme.set-gray-color(#cccccc, #ffffff);
+
+$colors: lkt-theme.get-color-map();
+
+// $colors content:
+
+(
+    primary: (color: #ff0000, contrast: #ffffff),
+    primary-dark: (color: #ff0022, contrast: #ffffff),
+    primary-gray: (color: #cccccc, contrast: #ffffff),
+)
+```
+
+This is useful to iterate and generate modifiers to existing CSS selectors:
+
+```scss
+.item {
+  @each $code, $palette in $colors {
+    $color: map-get($palette, color);
+    $contrast: map-get($palette, contrast);
+      
+    &.#{$code} {
+      color: $color;
+      background: $contrast;
+    }
+  }
+}
+
+// Will generate the following output:
+.item.primary {
+  color: #ff0000;
+  background: #ffffff; }
+.item.primary-dark {
+  color: #ff0022;
+  background: #ffffff; }
+.item.gray {
+  color: #cccccc;
+  background: #ff0000; }
+```
+
+## Border radius
 
 ### Available border radius
 
@@ -126,8 +179,6 @@ button.success {
 
 ## Transitions
 
----
-
 ### Available transitions
 
 | Color     | Use case                            |
@@ -165,8 +216,6 @@ button.success {
 
 ## Font sizes
 
----
-
 ### Available font sizes
 
 | Color     | Use case                           |
@@ -203,8 +252,6 @@ button.success {
 ```
 
 ## Font families
-
----
 
 ### Available font families
 

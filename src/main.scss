@@ -18,3 +18,269 @@
 
 @import "font-families/font-families";
 @import "font-sizes/font-sizes";
+
+@function get-color-map() {
+  $response: ();
+
+
+  @if($primary-color) {
+    $temp: (primary: (color: $primary-color, contrast: $primary-color-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($primary-color-dark) {
+    $temp: (primary-dark: (color: $primary-color-dark, contrast: $primary-color-dark-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($primary-color-darker) {
+    $temp: (primary-darker: (color: $primary-color-darker, contrast: $primary-color-darker-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($primary-color-light) {
+    $temp: (primary-light: (color: $primary-color-light, contrast: $primary-color-light-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($primary-color-lighter) {
+    $temp: (primary-lighter: (color: $primary-color-lighter, contrast: $primary-color-lighter-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+
+  @if($secondary-color) {
+    $temp: (secondary: (color: $secondary-color, contrast: $secondary-color-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($secondary-color-dark) {
+    $temp: (secondary-dark: (color: $secondary-color-dark, contrast: $secondary-color-dark-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($secondary-color-darker) {
+    $temp: (secondary-darker: (color: $secondary-color-darker, contrast: $secondary-color-darker-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($secondary-color-light) {
+    $temp: (secondary-light: (color: $secondary-color-light, contrast: $secondary-color-light-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($secondary-color-lighter) {
+    $temp: (secondary-lighter: (color: $secondary-color-lighter, contrast: $secondary-color-lighter-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+
+  @if($info-color) {
+    $temp: (info: (color: $info-color, contrast: $info-color-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($info-color-dark) {
+    $temp: (info-dark: (color: $info-color-dark, contrast: $info-color-dark-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($info-color-darker) {
+    $temp: (info-darker: (color: $info-color-darker, contrast: $info-color-darker-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($info-color-light) {
+    $temp: (info-light: (color: $info-color-light, contrast: $info-color-light-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($info-color-lighter) {
+    $temp: (info-lighter: (color: $info-color-lighter, contrast: $info-color-lighter-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+
+  @if($warning-color) {
+    $temp: (warning: (color: $warning-color, contrast: $warning-color-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($warning-color-dark) {
+    $temp: (warning-dark: (color: $warning-color-dark, contrast: $warning-color-dark-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($warning-color-darker) {
+    $temp: (warning-darker: (color: $warning-color-darker, contrast: $warning-color-darker-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($warning-color-light) {
+    $temp: (warning-light: (color: $warning-color-light, contrast: $warning-color-light-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($warning-color-lighter) {
+    $temp: (warning-lighter: (color: $warning-color-lighter, contrast: $warning-color-lighter-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+
+  @if($notice-color) {
+    $temp: (notice: (color: $notice-color, contrast: $notice-color-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($notice-color-dark) {
+    $temp: (notice-dark: (color: $notice-color-dark, contrast: $notice-color-dark-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($notice-color-darker) {
+    $temp: (notice-darker: (color: $notice-color-darker, contrast: $notice-color-darker-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($notice-color-light) {
+    $temp: (notice-light: (color: $notice-color-light, contrast: $notice-color-light-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($notice-color-lighter) {
+    $temp: (notice-lighter: (color: $notice-color-lighter, contrast: $notice-color-lighter-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+
+  @if($danger-color) {
+    $temp: (danger: (color: $danger-color, contrast: $danger-color-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($danger-color-dark) {
+    $temp: (danger-dark: (color: $danger-color-dark, contrast: $danger-color-dark-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($danger-color-darker) {
+    $temp: (danger-darker: (color: $danger-color-darker, contrast: $danger-color-darker-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($danger-color-light) {
+    $temp: (danger-light: (color: $danger-color-light, contrast: $danger-color-light-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($danger-color-lighter) {
+    $temp: (danger-lighter: (color: $danger-color-lighter, contrast: $danger-color-lighter-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+
+  @if($success-color) {
+    $temp: (success: (color: $success-color, contrast: $success-color-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($success-color-dark) {
+    $temp: (success-dark: (color: $success-color-dark, contrast: $success-color-dark-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($success-color-darker) {
+    $temp: (success-darker: (color: $success-color-darker, contrast: $success-color-darker-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($success-color-light) {
+    $temp: (success-light: (color: $success-color-light, contrast: $success-color-light-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($success-color-lighter) {
+    $temp: (success-lighter: (color: $success-color-lighter, contrast: $success-color-lighter-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+
+  @if($target-color) {
+    $temp: (target: (color: $target-color, contrast: $target-color-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($target-color-dark) {
+    $temp: (target-dark: (color: $target-color-dark, contrast: $target-color-dark-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($target-color-darker) {
+    $temp: (target-darker: (color: $target-color-darker, contrast: $target-color-darker-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($target-color-light) {
+    $temp: (target-light: (color: $target-color-light, contrast: $target-color-light-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($target-color-lighter) {
+    $temp: (target-lighter: (color: $target-color-lighter, contrast: $target-color-lighter-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+
+  @if($alert-color) {
+    $temp: (alert: (color: $alert-color, contrast: $alert-color-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($alert-color-dark) {
+    $temp: (alert-dark: (color: $alert-color-dark, contrast: $alert-color-dark-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($alert-color-darker) {
+    $temp: (alert-darker: (color: $alert-color-darker, contrast: $alert-color-darker-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($alert-color-light) {
+    $temp: (alert-light: (color: $alert-color-light, contrast: $alert-color-light-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($alert-color-lighter) {
+    $temp: (alert-lighter: (color: $alert-color-lighter, contrast: $alert-color-lighter-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+
+  @if($gray-color) {
+    $temp: (gray: (color: $gray-color, contrast: $gray-color-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($gray-color-dark) {
+    $temp: (gray-dark: (color: $gray-color-dark, contrast: $gray-color-dark-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($gray-color-darker) {
+    $temp: (gray-darker: (color: $gray-color-darker, contrast: $gray-color-darker-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($gray-color-light) {
+    $temp: (gray-light: (color: $gray-color-light, contrast: $gray-color-light-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @if($gray-color-lighter) {
+    $temp: (gray-lighter: (color: $gray-color-lighter, contrast: $gray-color-lighter-contrast));
+    $response: map-merge($response, $temp);
+  }
+
+  @return $response;
+}

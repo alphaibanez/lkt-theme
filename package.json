@@ -1,6 +1,6 @@
 {
   "name": "lkt-theme",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A simple tool for theming config and control",
   "main": "lkt-theme.scss",
   "module": "lkt-theme.scss",
@@ -21,13 +21,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/lkt-ui/lkt-theme.git"
+    "url": "git+https://github.com/lekrat/lkt-theme.git"
   },
   "author": "Antonio Ibáñez <lkt.web.tech@gmail.com>",
   "license": "MIT",
-  "homepage": "https://gitlab.com/lkt-ui/lkt-theme#readme",
+  "homepage": "https://github.com/lekrat/lkt-theme#readme",
   "bugs": {
-    "url": "https://gitlab.com/lkt-ui/lkt-theme/issues"
+    "url": "https://github.com/lekrat/lkt-theme/issues"
   },
   "devDependencies": {
     "scss-bundle": "^3.1.2"
