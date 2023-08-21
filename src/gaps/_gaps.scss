@@ -1,0 +1,15 @@
+$primary-gap: false !default;
+$secondary-gap: false !default;
+$tertiary-gap: false !default;
+
+@mixin set-gap($primary: false, $secondary: false, $tertiary: false) {
+  @if ($primary) {
+    $primary-gap: $primary !global;
+  }
+  @if ($secondary) {
+    $secondary-gap: $secondary !global;
+  }
+  @if ($tertiary) {
+    $tertiary-gap: $tertiary !global;
+  }
+}

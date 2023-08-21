@@ -19,6 +19,8 @@
 @import "font-families/font-families";
 @import "font-sizes/font-sizes";
 
+@import "gaps/gaps";
+
 @function get-color-map() {
   $response: ();
 
